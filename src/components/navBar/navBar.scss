@@ -1,12 +1,16 @@
+@import "../../common_style.scss";
+
 .navbar{
+    @include themify($themes) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 21px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid themed("border");
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: themed("bg");
+    color: themed("textColor");
 
 
     .left{
@@ -17,14 +21,14 @@
         span{
             font-weight: bold;
             font-size: 21px;
-            color: darkblue;
+            color: themed("logo");
         }
 
         .search{
             display: flex;
             align-items: center;
             gap: 11px;
-            border: 1px solid lightgray;
+            border: 1px solid themed("border");
             border-radius: 5px;
             input{
                 border: none;
@@ -54,5 +58,6 @@
 
             }
         }
+    }
     }
 }
