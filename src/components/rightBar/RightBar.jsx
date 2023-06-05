@@ -75,7 +75,36 @@ const RightBar = () => {
           <div className="user">
             <div className="userInfo">
               <img src={smiling_woamn} alt="" />
-                <span>Thales Awor</span>
+              <div className="online" />
+              <span>Thales Awor</span>
+            </div>
+          </div>
+          <div className="user">
+            <div className="userInfo">
+              <img src={smiling_woamn} alt="" />
+              <div className="online" />
+              <span>Thales Awor</span>
+            </div>
+          </div>
+          <div className="user">
+            <div className="userInfo">
+              <img src={smiling_woamn} alt="" />
+              <div className="online" />
+              <span>Thales Awor</span>
+            </div>
+          </div>
+          <div className="user">
+            <div className="userInfo">
+              <img src={smiling_woamn} alt="" />
+              <div className="online" />
+              <span>Thales Awor</span>
+            </div>
+          </div>
+          <div className="user">
+            <div className="userInfo">
+              <img src={smiling_woamn} alt="" />
+              <div className="online" />
+              <span>Thales Awor</span>
             </div>
           </div>
         </div>
