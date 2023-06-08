@@ -13,8 +13,12 @@ import reports from "../../assets/reports.png"
 import saving from "../../assets/saving.png"
 import logs from "../../assets/logs.png"
 import preference from "../../assets/preference.png"
+import { useContext } from "react"
+import { AuthContext } from "../../context/authContext"
 
 const LeftBar = () => {
+
+  const {currentUser} = useContext(AuthContext);
   return (
     <div className="leftBar">
       {/* container */}
@@ -22,8 +26,8 @@ const LeftBar = () => {
         {/* first menu */}
         <div className="menu">
           <div className="user">
-            <img src={smiling_woman} />
-            <span>Thales Awor</span>
+            <img src={currentUser.profilePic} />
+            <span>{currentUser.name}</span>
           </div>
           <div className="item">
             <img src={users} />
