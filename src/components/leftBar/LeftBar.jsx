@@ -19,6 +19,7 @@ import { AuthContext } from "../../context/authContext"
 const LeftBar = () => {
 
   const {currentUser} = useContext(AuthContext);
+  
   return (
     <div className="leftBar">
       {/* container */}
